@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { logoutService } from "../../services/AuthService";
 import { MdOutlineLogout } from "react-icons/md";
 import Swal from "sweetalert2";
+import { logoutService } from "../../services/authService";
 
 const Navbar = ({ handleClick, sideClose }) => {
   const [heading, setHeading] = useState("");
