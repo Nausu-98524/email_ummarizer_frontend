@@ -1,11 +1,11 @@
 import { ApiCall } from "../utils/ApiCall";
 import {
-    DeleteEmailboxConfigurationURL,
+  DeleteEmailboxConfigurationURL,
   GetEmailboxConfigurationURL,
   SaveEmailboxConfigurationURL,
   UpdateEmailboxConfigurationURL,
   VerifyAppPasswordConfigurationURL,
-} from "../utils/endpoint";
+} from "../utils/EndPoints";
 import { HTTP_METHOD } from "../utils/HttpMethods";
 
 // ..........Mail Box Service............

@@ -1,5 +1,5 @@
 import { ApiCall } from "../utils/ApiCall";
-import { LoginUrl, LogoutUrl } from "../utils/endpoint";
+import { LoginUrl, LogoutUrl } from "../utils/EndPoints";
 import { HTTP_METHOD } from "../utils/HttpMethods";
 
 // ..........Login Service............

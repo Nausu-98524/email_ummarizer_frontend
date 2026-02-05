@@ -7,7 +7,7 @@ import {
   SendEmailByIdURL,
   SendEmailInBulk,
   syncEmailsURL,
-} from "../utils/endpoint";
+} from "../utils/EndPoints";
 import { HTTP_METHOD } from "../utils/HttpMethods";
 
 // ..........Get E-Mails Details............
@@ -16,7 +16,7 @@ export const getEmailDetailsService = async (
   limit = 20,
   search = "",
   status = "",
-  type = ""
+  type = "",
 ) => {
   return ApiCall(
     HTTP_METHOD.GET,
@@ -50,7 +50,13 @@ export const sendEmailInBulk = async (data) => {
 };
 
 export const getBulkJobProgress = async (id) => {
-  return ApiCall(HTTP_METHOD.GET, GetBulJobProgressByIDURL(id), {}, false, true);
+  return ApiCall(
+    HTTP_METHOD.GET,
+    GetBulJobProgressByIDURL(id),
+    {},
+    false,
+    true,
+  );
 };
 
 export const generateAiSummary = async (data) => {
