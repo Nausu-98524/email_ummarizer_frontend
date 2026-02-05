@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { setFocus } from "../components/common/common";
-import { loginService } from "../services/AuthService";
+import { LoginServiceNew } from "../services/authService";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +21,7 @@ const LoginPage = () => {
     };
     try {
       setloginLoader(true);
-      const { data } = await loginService(payload);
+      const { data } = await LoginServiceNew(payload);
 
       if (data?.success) {
         localStorage.setItem("token", data?.token || "");
